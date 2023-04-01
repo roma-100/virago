@@ -175,4 +175,22 @@
         text-align: left;
         }
     } 
+    a:link {
+        color: black;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: $clr-24;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: $clr-14;
+      }
+      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
 }

@@ -576,10 +576,29 @@ html {
   max-width: 600px;
   margin: 0 auto;
   background-color: #074B87;
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
 }
 
 .contact-us .intro-section > p {
   text-align: left;
+}
+
+.contact-us a:link {
+  color: black;
+}
+
+.contact-us a:visited {
+  color: #D14100;
+}
+
+.contact-us a:hover {
+  color: #D19F00;
+}
+
+.contact-us a:active {
+  color: blue;
 }
 *,
 *::before,

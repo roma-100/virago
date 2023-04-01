@@ -1,0 +1,163 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+   
+{% include "_partials/_menu.nunjucks" %}
+
+<div class="intro">
+  <div class="intro-hero"></div>
+  <div class="intro-logo">
+    <img src="./img/logo_h2.svg" alt="tttext logo_large">
+  </div>
+  <div class="intro-text">
+    <h3>
+      Quality, Reliability and Commitment
+    </h3>
+    <p>
+    Virago Commodities is devoted to the production and marketing of a variety of food products. 
+    </p>
+    <p>
+      We are committed to providing a trusted space for business relations between clients and suppliers.
+    </p>
+  </div>
+</div>
+
+<div class="product-category">
+  <div class="product-category__intro">
+  <div class="product-category__title">
+    Our Products
+  </div>
+  <p>
+    We are specialized in the production, manufacturing, exportation and trading of various type of food.
+  </p>
+  </div>
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_1.png" alt="category_1">
+    </div>
+    <div class="product-category-card__text">
+      GRAINS AND LEGUMES
+    </div>
+  </div>
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_2.png" alt="category_2">
+    </div>
+    <div class="product-category-card__text">
+      SEEDS AND HERBS
+    </div>
+  </div>
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_3.png" alt="category_3">
+    </div>
+    <div class="product-category-card__text">
+      GRAINS AND LEGUMES
+    </div>
+  </div>
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_4.png" alt="category_4">
+    </div>
+    <div class="product-category-card__text">
+      NUTS AND PEANUTS
+    </div>
+  </div>
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_5.png" alt="category_5">
+    </div>
+    <div class="product-category-card__text">
+      GRAINS AND LEGUMES
+    </div>
+  </div>
+
+<div class="product-category__button">
+  ALL PRODUCTS LIST
+</div>
+<div class="product-category__bottom"></div>
+</div>
+
+<div class="our-service">
+
+  <div class="product-category__intro">
+  <div class="product-category__title">
+    Our Services
+  </div>
+  <p>
+    Virago Commodities believes there’s nothing more important than getting products from source to destination efficiently, on time and in good condition. We offer a range of services to ensure the best outcomes for our clients.
+  </p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card__image">
+      <img src="./img/service_deal.png" alt="category_5">
+    </div>
+    <div class="service-card__category">
+      Trading Services
+    </div>    
+    <p>
+     Our world-class trading services delivers the resources to access a full spectrum of global opportunities, including market research, cargo load coordination, tracking and more.
+    </p>
+    <div class="service-card__btn">
+      READ MORE
+    </div>
+  </div>
+
+  <div class="service-card">
+    <div class="service-card__image">
+      <img src="./img/service_salary.png" alt="category_5">
+    </div>
+    <div class="service-card__category">
+      Financial Solutions
+    </div>    
+    <p>
+     Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.
+    </p>
+    <div class="service-card__btn">
+      READ MORE
+    </div>
+  </div>
+
+    <div class="service-card">
+    <div class="service-card__image">
+      <img src="./img/service_search.png" alt="category_5">
+    </div>
+    <div class="service-card__category">
+      Quality Control & Guarantee
+    </div>    
+    <p>
+     Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.
+    </p>
+    <div class="service-card__btn">
+      READ MORE
+    </div>
+  </div>
+
+    <div class="service-card">
+    <div class="service-card__image">
+      <img src="./img/service_cargo.png" alt="category_5">
+    </div>
+    <div class="service-card__category">
+      Logistics & Documentation
+    </div>    
+    <p>
+     Nothing more important than getting products from source to destination efficiently, on time and in good condition.
+    </p>
+    <div class="service-card__btn">
+      READ MORE
+    </div>
+  </div>
+
+<div class="service-card__bottom"></div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,8 @@
+
+  <div class="product-category-card">
+    <div class="product-category-card__image">
+      <img src="./img/category_2.png" alt="category_2">
+    </div>
+    <div class="product-category-card__text">
+      GRAINS AND LEGUMES
+    </div>

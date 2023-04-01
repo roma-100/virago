@@ -66,7 +66,7 @@
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: $color-secondary-2-2;
+  background-color: $clr-4; /* color burger */
   position: absolute;
   height: 4px;
   width: 30px;
@@ -98,7 +98,7 @@
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu-button-container {
     display: flex;
   }
@@ -121,7 +121,7 @@
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid $color-secondary-2-0;
+    border: 1px solid whitesmoke; /* color lines */
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -133,21 +133,19 @@
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    /* color: $color-secondary-2-4; */
-    /* background-color: $color-secondary-2-2; */
-    background-color: $color-secondary-2-2-09;
-    /* opacity: .8; */
+    background-color: $clr-3; /* menu bcolor */
+    opacity: .9;
     &>a {
       /* text-decoration: none; */
       color:white;
       &:hover{
-        color: $color-primary-2;
+        color: $clr-12; /* color hover */
       }
     }
   }
 
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid $color-primary-2;
+    border-bottom: 1px solid $clr-4; /* ??? */
   }
 }
 

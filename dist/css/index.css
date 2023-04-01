@@ -15,6 +15,10 @@ body {
   font-family: "Inter-SemiBold";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "AvenirLTStd-Black";
   font-display: swap;
@@ -221,7 +225,8 @@ body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #1F69A2;
+  background-color: #074B87;
+  /* color burger */
   position: absolute;
   height: 4px;
   width: 30px;
@@ -261,7 +266,7 @@ body {
           transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu-button-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -298,7 +303,8 @@ body {
   }
 
   #menu-toggle:checked ~ .menu li {
-    border: 1px solid #084C81;
+    border: 1px solid whitesmoke;
+    /* color lines */
     height: 2.5em;
     padding: 0.5em;
     -webkit-transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -317,10 +323,9 @@ body {
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    /* color: $color-secondary-2-4; */
-    /* background-color: $color-secondary-2-2; */
-    background-color: rgba(31, 105, 162, 0.9);
-    /* opacity: .8; */
+    background-color: #096AC0;
+    /* menu bcolor */
+    opacity: 0.9;
   }
 
   .menu > li > a {
@@ -329,11 +334,13 @@ body {
   }
 
   .menu > li > a:hover {
-    color: #FCFC21;
+    color: #FFD34A;
+    /* color hover */
   }
 
   .menu > li:not(:last-child) {
-    border-bottom: 1px solid #FCFC21;
+    border-bottom: 1px solid #074B87;
+    /* ??? */
   }
 }
 *,
@@ -351,6 +358,10 @@ body {
 
 body {
   font-family: "Inter-SemiBold";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .intro-hero {
@@ -427,7 +438,7 @@ body {
 }
 
 .product-category .product-category__button {
-  width: 250px;
+  width: 300px;
   height: 44px;
   background: #096AC0;
   border: 1px solid white;
@@ -435,6 +446,7 @@ body {
           box-shadow: 4px 4px 4px #074B87;
   border-radius: 10px;
   margin: 0 auto;
+  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,24 +459,20 @@ body {
   color: white;
 }
 
-.product-category .product-category__bottom {
-  height: 2rem;
-}
-
-.product-category__intro {
+.intro-section {
   max-width: 600px;
   margin: 0 auto;
   padding: 1rem;
 }
 
-.product-category__intro .product-category__title {
+.intro-section .intro-title {
   font-family: "Inter-ExtraBold";
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
   text-align: center;
 }
 
-.product-category__intro > p {
+.intro-section > p {
   padding: 0 2rem 0 2rem;
   text-align: center;
 }
@@ -541,8 +549,37 @@ body {
   border-radius: 7px;
 }
 
-.service-card__bottom {
+.section__bottom {
   height: 1rem;
+}
+
+.our-team {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #096AC0;
+}
+
+.our-team .intro-section > p {
+  text-align: left;
+}
+
+.our-team .our-team-hero {
+  text-align: center;
+  margin: 1rem;
+}
+
+.our-team .our-team-hero > img {
+  width: 90%;
+}
+
+.contact-us {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #074B87;
+}
+
+.contact-us .intro-section > p {
+  text-align: left;
 }
 *,
 *::before,
@@ -559,6 +596,10 @@ body {
 
 body {
   font-family: "Inter-SemiBold";
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .home-intro {

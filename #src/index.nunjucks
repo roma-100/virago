@@ -180,7 +180,7 @@
   </div>
 
   <div class="our-team-hero">
-    <img src="../img/section_our_team.png" alt="our-team-hero">
+    <img src="./img/section_our_team.png" alt="our-team-hero">
   </div>
 
 <div class="section__bottom"></div>

@@ -12,7 +12,7 @@
 <body>
     <!-- You write code for this content block in another file -->
     
-   
+
 <!-- _menu.nunjucks -->
     <section class="top-nav">
       <div class="top-nav-logo-name">
@@ -28,17 +28,16 @@
       
     <!-- _menu.nunjucks -->
     <section class="menu_butter">      
-      <input id="menu-toggle" type="checkbox" />
+      <input id="menu-toggle"  type="checkbox"/>
       <label class='menu-button-container' for="menu-toggle">
       <div class='menu-button'></div>
     </label>
-      <ul class="menu">
+      <ul class="menu" id="menu_point" onclick="CollapseMunu()">
         <li><a href=".">Home</a></li>
-        <li><a href="#point_our-team">About Us</a></li>
+        <li><a href="#point_our-team"  >About Us</a></li>
         <li><a href="#point_our-service">Services</a></li>
         <li><a href="#point_product-category">Products</a></li>
         <li><a href="#point_contact_us">Contact Us</a></li>
-        <li>Languages</li>
       </ul>
     </section>
     </div>
@@ -47,12 +46,20 @@
 
 
 
+  
 <div class="intro">
+
   <div class="intro-hero"></div>
   <div class="intro-logo">
     <img src="./img/logo_h2.svg" alt="tttext logo_large">
   </div>
-  <div class="intro-text">
+
+</div>
+
+<div class="content-wrap"> 
+
+<!-- Section Intro Start -->
+    <div class="intro-text">
     <h3>
       Quality, Reliability and Commitment
     </h3>
@@ -63,7 +70,8 @@
       We are committed to providing a trusted space for business relations between clients and suppliers.
     </p>
   </div>
-</div>
+<!-- Section Intro End -->
+
 <!-- Section Category Start -->
 <div class="product-category" id="point_product-category">
   <div class="intro-section">
@@ -75,50 +83,72 @@
     </p>
   </div>
 
+    
+
   <div class="product-category-card">
     <div class="product-category-card__image">
-      <img src="./img/category_1.png" alt="category_1">
+      <img src=./img/category_1.png alt=GRAINS AND LEGUMES>
     </div>
     <div class="product-category-card__text">
       GRAINS AND LEGUMES
     </div>
   </div>
 
+
+
+
+    
+
   <div class="product-category-card">
     <div class="product-category-card__image">
-      <img src="./img/category_2.png" alt="category_2">
+      <img src=./img/category_2.png alt=SEEDS AND HERBS>
     </div>
     <div class="product-category-card__text">
       SEEDS AND HERBS
     </div>
   </div>
 
+
+
+    
+
   <div class="product-category-card">
     <div class="product-category-card__image">
-      <img src="./img/category_3.png" alt="category_3">
+      <img src=./img/category_3.png alt=NUTS AND PEANUTS>
     </div>
     <div class="product-category-card__text">
       NUTS AND PEANUTS
     </div>
   </div>
 
+
+
+    
+
   <div class="product-category-card">
     <div class="product-category-card__image">
-      <img src="./img/category_4.png" alt="category_4">
+      <img src=./img/category_4.png alt=BEEF>
     </div>
     <div class="product-category-card__text">
       BEEF
     </div>
   </div>
 
+
+
+    
+
   <div class="product-category-card">
     <div class="product-category-card__image">
-      <img src="./img/category_5.png" alt="category_5">
+      <img src=./img/category_5.png alt=OILS, PELLETS AND FLOUR>
     </div>
     <div class="product-category-card__text">
       OILS, PELLETS AND FLOUR
     </div>
   </div>
+
+
+
 
 <div class="product-category__button">
   ALL PRODUCTS LIST
@@ -144,9 +174,10 @@
   </p>
   </div>
 
+    
   <div class="service-card">
     <div class="service-card__image">
-      <img src="./img/service_deal.png" alt="category_5">
+      <img src=./img/service_deal.png alt=Trading Services>
     </div>
     <div class="service-card__category">
       Trading Services
@@ -159,9 +190,12 @@
     </div>
   </div>
 
+
+
+    
   <div class="service-card">
     <div class="service-card__image">
-      <img src="./img/service_salary.png" alt="category_5">
+      <img src=./img/service_salary.png alt=Financial Solutions>
     </div>
     <div class="service-card__category">
       Financial Solutions
@@ -174,27 +208,15 @@
     </div>
   </div>
 
-    <div class="service-card">
-    <div class="service-card__image">
-      <img src="./img/service_search.png" alt="category_5">
-    </div>
-    <div class="service-card__category">
-      Quality Control & Guarantee
-    </div>    
-    <p>
-     Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.
-    </p>
-    <div class="service-card__btn">
-      READ MORE
-    </div>
-  </div>
 
-    <div class="service-card">
+
+    
+  <div class="service-card">
     <div class="service-card__image">
-      <img src="./img/service_cargo.png" alt="category_5">
+      <img src=./img/service_search.png alt=Quality Control &amp; Guarantee>
     </div>
     <div class="service-card__category">
-      Logistics & Documentation
+      Quality Control &amp; Guarantee
     </div>    
     <p>
      Nothing more important than getting products from source to destination efficiently, on time and in good condition.
@@ -204,6 +226,27 @@
     </div>
   </div>
 
+
+
+
+    
+  <div class="service-card">
+    <div class="service-card__image">
+      <img src=./img/service_cargo.png alt=Logistics &amp; Documentation>
+    </div>
+    <div class="service-card__category">
+      Logistics &amp; Documentation
+    </div>    
+    <p>
+     Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.
+    </p>
+    <div class="service-card__btn">
+      READ MORE
+    </div>
+  </div>
+
+
+  
 <div class="section__bottom"></div>
 </div>
 <!-- Section Services End -->
@@ -221,7 +264,7 @@
   </div>
 
   <div class="our-team-hero">
-    <img src="./img/section_our_team.png" alt="our-team-hero">
+    <img src="./img/section_our_team.jpg" alt="our-team-hero">
   </div>
 
 <div class="section__bottom"></div>
@@ -250,10 +293,12 @@
 
 </div>
 <!-- Section contact-us End -->
+</div>
+
 
 
   
  </body>
 
-<script src="js/script.js"></script>
+<script src="js/menu.js"></script>
 </html>

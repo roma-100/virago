@@ -1,17 +1,27 @@
 <!-- index.nunjucks -->
+{% import 'macros/_services-macro.nunjucks' as mcr_srv %}
+{% import 'macros/_category_card_macro.nunjucks' as mcr_category_card %}
 
 {% extends "_layout.nunjucks" %}
 
 {% block content %}
-   
+
 {% include "_partials/_menu.nunjucks" %}
 
+  
 <div class="intro">
+
   <div class="intro-hero"></div>
   <div class="intro-logo">
     <img src="./img/logo_h2.svg" alt="tttext logo_large">
   </div>
-  <div class="intro-text">
+
+</div>
+
+<div class="content-wrap"> 
+
+<!-- Section Intro Start -->
+    <div class="intro-text">
     <h3>
       Quality, Reliability and Commitment
     </h3>
@@ -22,7 +32,8 @@
       We are committed to providing a trusted space for business relations between clients and suppliers.
     </p>
   </div>
-</div>
+<!-- Section Intro End -->
+
 <!-- Section Category Start -->
 <div class="product-category" id="point_product-category">
   <div class="intro-section">
@@ -34,50 +45,32 @@
     </p>
   </div>
 
-  <div class="product-category-card">
-    <div class="product-category-card__image">
-      <img src="./img/category_1.png" alt="category_1">
-    </div>
-    <div class="product-category-card__text">
-      GRAINS AND LEGUMES
-    </div>
-  </div>
+    {{ mcr_category_card.category_item(
+    './img/category_1.png', 
+    'GRAINS AND LEGUMES'
+    ) }}
 
-  <div class="product-category-card">
-    <div class="product-category-card__image">
-      <img src="./img/category_2.png" alt="category_2">
-    </div>
-    <div class="product-category-card__text">
-      SEEDS AND HERBS
-    </div>
-  </div>
 
-  <div class="product-category-card">
-    <div class="product-category-card__image">
-      <img src="./img/category_3.png" alt="category_3">
-    </div>
-    <div class="product-category-card__text">
-      NUTS AND PEANUTS
-    </div>
-  </div>
+    {{ mcr_category_card.category_item(
+    './img/category_2.png', 
+    'SEEDS AND HERBS'
+    ) }}
 
-  <div class="product-category-card">
-    <div class="product-category-card__image">
-      <img src="./img/category_4.png" alt="category_4">
-    </div>
-    <div class="product-category-card__text">
-      BEEF
-    </div>
-  </div>
+    {{ mcr_category_card.category_item(
+    './img/category_3.png', 
+    'NUTS AND PEANUTS'
+    ) }}
 
-  <div class="product-category-card">
-    <div class="product-category-card__image">
-      <img src="./img/category_5.png" alt="category_5">
-    </div>
-    <div class="product-category-card__text">
-      OILS, PELLETS AND FLOUR
-    </div>
-  </div>
+    {{ mcr_category_card.category_item(
+    './img/category_4.png', 
+    'BEEF'
+    ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_5.png', 
+    'OILS, PELLETS AND FLOUR'
+    ) }}
+
 
 <div class="product-category__button">
   ALL PRODUCTS LIST
@@ -103,66 +96,31 @@
   </p>
   </div>
 
-  <div class="service-card">
-    <div class="service-card__image">
-      <img src="./img/service_deal.png" alt="category_5">
-    </div>
-    <div class="service-card__category">
-      Trading Services
-    </div>    
-    <p>
-     Our world-class trading services delivers the resources to access a full spectrum of global opportunities, including market research, cargo load coordination, tracking and more.
-    </p>
-    <div class="service-card__btn">
-      READ MORE
-    </div>
-  </div>
+    {{ mcr_srv.service_item(
+    './img/service_deal.png', 
+    'Trading Services',
+    'Our world-class trading services delivers the resources to access a full spectrum of global opportunities, including market research, cargo load coordination, tracking and more.',
+    '#') }}
 
-  <div class="service-card">
-    <div class="service-card__image">
-      <img src="./img/service_salary.png" alt="category_5">
-    </div>
-    <div class="service-card__category">
-      Financial Solutions
-    </div>    
-    <p>
-     Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.
-    </p>
-    <div class="service-card__btn">
-      READ MORE
-    </div>
-  </div>
+    {{ mcr_srv.service_item(
+    './img/service_salary.png', 
+    'Financial Solutions',
+    'Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.',
+    '#') }}
 
-    <div class="service-card">
-    <div class="service-card__image">
-      <img src="./img/service_search.png" alt="category_5">
-    </div>
-    <div class="service-card__category">
-      Quality Control & Guarantee
-    </div>    
-    <p>
-     Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.
-    </p>
-    <div class="service-card__btn">
-      READ MORE
-    </div>
-  </div>
+    {{ mcr_srv.service_item(
+    './img/service_search.png', 
+    'Quality Control & Guarantee',
+    'Nothing more important than getting products from source to destination efficiently, on time and in good condition.',
+    '#') }}
 
-    <div class="service-card">
-    <div class="service-card__image">
-      <img src="./img/service_cargo.png" alt="category_5">
-    </div>
-    <div class="service-card__category">
-      Logistics & Documentation
-    </div>    
-    <p>
-     Nothing more important than getting products from source to destination efficiently, on time and in good condition.
-    </p>
-    <div class="service-card__btn">
-      READ MORE
-    </div>
-  </div>
 
+    {{ mcr_srv.service_item(
+    './img/service_cargo.png', 
+    'Logistics & Documentation',
+    'Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.',
+    '#') }}
+  
 <div class="section__bottom"></div>
 </div>
 <!-- Section Services End -->
@@ -180,7 +138,7 @@
   </div>
 
   <div class="our-team-hero">
-    <img src="./img/section_our_team.png" alt="our-team-hero">
+    <img src="./img/section_our_team.jpg" alt="our-team-hero">
   </div>
 
 <div class="section__bottom"></div>
@@ -209,5 +167,10 @@
 
 </div>
 <!-- Section contact-us End -->
+</div>
+{# 
+{{ username }}
+{% set username = "welcome" %}
+{{ username }} #}
 
 {% endblock %}

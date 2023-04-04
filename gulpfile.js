@@ -52,7 +52,7 @@ let path = {
     //return gulp.src('#src/**/*.+(html|nunjucks)')
     //css: source_folder + '/scss/style.scss',
     scss: [source_folder + "/scss/**.scss", "!" + source_folder + "/_*.scss"],
-    js: source_folder + "/js/script.js",
+    js: source_folder + "/js/**.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", //** meaning recoursive mode
     fonts: source_folder + "/fonts/*.ttf",
     lib: source_folder + "/lib/**",

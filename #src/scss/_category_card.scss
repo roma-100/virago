@@ -1,0 +1,26 @@
+
+.product-category-card {
+    width: 300px;
+    margin: 0 auto;
+    background-color: $clr-3;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    .product-category-card__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        &>img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .product-category-card__text {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        margin: 1rem;
+    }
+
+}

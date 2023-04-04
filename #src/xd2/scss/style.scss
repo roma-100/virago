@@ -1,0 +1,130 @@
+@import '_init';
+@import '_services';
+@import '_category_card';
+
+.content-wrap{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-hero {
+    width: 100%;
+    height: 300px;
+    background: url('../img/intro.jpg') 0 0/cover no-repeat;
+}
+
+.intro-logo {
+    margin: 2rem;
+    text-align: center;
+
+    &>img {
+        width: 220px;
+        height: auto;
+    }
+}
+
+/* Inter-SemiBold */
+.intro-text {
+
+    &>h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: $clr-3;
+    }
+}
+
+/* Inter-ExtraBold */
+.product-category {
+    background-color: $clr-2;
+    .category-cards-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .product-category__button{
+        width: 300px;
+        height: 44px;
+
+        background: $clr-3;
+        border: 1px solid white;
+        box-shadow: 4px 4px 4px $clr-4;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+/* Start layout intro */
+.intro-section {
+    padding: 1rem;
+    .intro-title {
+        font-family: 'Inter-ExtraBold';
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+    }
+    &>p {
+        padding: 0 2rem 0 2rem;
+        text-align: center;
+    }
+}
+/* End layout intro */
+
+.section__bottom{
+    height: 1rem;
+}
+
+
+.our-service {
+    background-color: $clr-4;
+}
+
+.our-team {
+    margin: 0 auto;
+    background-color: $clr-3;
+    .intro-section {
+        &>p {
+        text-align: left;
+        }
+    } 
+    .our-team-hero {
+        text-align: center;
+        margin: 1rem;
+        &>img {
+            width: 90%;
+        }
+    }
+}
+
+.contact-us {
+    background-color: $clr-4;
+    .intro-section {
+        &>p {
+        text-align: left;
+        }
+    } 
+    a:link {
+        color: black;
+      }
+      
+      /* visited link */
+      a:visited {
+        color: $clr-24;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: $clr-14;
+      }
+      
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+}

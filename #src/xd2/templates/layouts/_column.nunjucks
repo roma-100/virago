@@ -1,3 +1,0 @@
-<h1>---- test start ----</h1>
-{% block content %} {% endblock %}
-<h1>-----test end-----</h1>

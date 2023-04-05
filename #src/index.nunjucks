@@ -7,11 +7,10 @@
 {% block content %}
 
 {% include "_partials/_menu.nunjucks" %}
-
   
 <div class="intro">
 
-  <div class="intro-hero"></div>
+  <div class="intro-hero" style="background: url('./img/intro.jpg') 0 0/cover no-repeat;"></div>
   <div class="intro-logo">
     <img src="./img/logo_h2.svg" alt="tttext logo_large">
   </div>
@@ -100,7 +99,7 @@
     './img/service_deal.png', 
     'Trading Services',
     'Our world-class trading services delivers the resources to access a full spectrum of global opportunities, including market research, cargo load coordination, tracking and more.',
-    '#') }}
+    'srv_trading.html') }}
 
     {{ mcr_srv.service_item(
     './img/service_salary.png', 
@@ -147,21 +146,7 @@
 
 
 <!-- Section contact-us Start -->
-<div class="contact-us" id="point_contact_us">
-
-  <div class="intro-section">
-    <div class="intro-title">
-      Contact Us
-    </div>
-    <p>
-      Virago SA <br>
-      Avenue Uruguay 1664/4<br>
-       Montevideo - Uruguay<br>
-       <a href="tel:598 4032113">Tel: 598 4032113</a><br>
-       <a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a>
-      
-    </p>
-  </div>
+{% include "_partials/_address.nunjucks" %}
 
 <div class="section__bottom"></div>
 

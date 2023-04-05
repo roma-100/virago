@@ -1,0 +1,38 @@
+
+
+.srv-trading-title {
+    text-align: center;
+    color: $clr-3;
+}
+
+.srv-market-knowledge {
+    background-color: $clr-3;
+    color: white;
+}
+.srv-market-knowledge--plus {
+    height: 1px;
+}
+.srv-market-knowledge__title {
+    background-color: $clr-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.srv-market-knowledge__list {
+    max-width: 400px;
+    padding: 0 1rem 0 1rem;
+}
+
+.srv-trading-title--border {
+    border: 1px solid $clr-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .srv-trading-title--left {
+        color: $clr-3;        
+    }
+}
+.srv-trading--border {
+    border: 1px solid $clr-3;
+}

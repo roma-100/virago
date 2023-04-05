@@ -1,0 +1,150 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_trading_hero.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div class="srv-trading-title">
+  <h2>Trading Services</h2>
+</div>
+
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__title">
+    <h2>Market Knowledge</h2>
+  </div>
+  <div class="srv-market-knowledge__list">
+    <h3> Market Research</h3>
+    <ul>
+      <li>Consumer behavior, marketing and distribution</li>
+      <li>Destination analysis:<br>
+      Local laws, health regulations, political, economic, social & cultural issues
+      </li>
+    </ul>
+  </div>
+
+   <div class="srv-market-knowledge__list">
+    <h3> Customer Proximity</h3>
+    <ul>
+      <li>Customer Proximity</li>
+      <li>Statistical production</li>
+      <li>Delivery of customized products</li>
+    </ul>
+  </div> 
+<div style="height: 1rem"></div>
+</div>
+<!-- End Market Knowledge -->
+
+<div class="srv-trading-title--border">
+  <div class="srv-trading-title--left">
+    <h2>Booking Request<br>
+    Shipping Advice<br>
+    Follow-Up
+    </h2>
+  </div>
+</div>
+
+<!-- Start Quality Matters -->
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__title">
+    <h2>Quality Matters
+    </h2>
+  </div>
+  <div class="srv-market-knowledge__list">
+    <h3>Pre-loading and Loading<br>
+      Quality Control<br>
+      Visual Control
+    </h3>
+    <ul>
+      <li>Product inspection</li>
+      <li>Container control status</li>
+      <li>Item count per container row</li>
+      <li>Label control (for exporter/importer)</li>
+      <li>Packaging control</li>
+      <li>Product defrost in order to assess several parameters</li>
+    </ul>
+  </div>
+
+   <div class="srv-market-knowledge__list">
+    <h3>Weight and Size Control</h3>
+    <ul>
+      <li>Cargo and packaging weight</li>
+      <li>Size sampling</li>
+      <li>Gross and net weight control</li>
+    </ul>
+  </div> 
+
+   <div class="srv-market-knowledge__list">
+    <h3>Temperature Control</h3>
+    <ul>
+      <li>Goods temperature control during the entire loading process</li>
+    </ul>
+  </div> 
+
+   <div class="srv-market-knowledge__list">
+    <h3>Final Report Including Weight Chart, <br>
+    Temperature Scales and Photos</h3>
+  </div> 
+
+  <img src="" alt="">
+
+<div style="height: 1rem"></div>
+</div>
+
+<!-- End Quality Matters -->
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_trading_man.png') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="srv-trading--border">
+
+   <div class="srv-market-knowledge__list clr-4">
+    <h3>Records & documents</h3>
+    <ul>
+      <li>Preparation of documents according to clients needs and requirements</li>
+      <li>Draft check prior issuance of the original documents</li>
+      <li>Issuance of mandatory certificates according to country of destination e.g. ECTN, BSC, BESC, FERI, CNCA and CCVO among others</li>
+      <li>Original documents sent by Courier</li>
+    </ul>
+  </div> 
+
+</div>
+
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_trading_letter.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__title">
+    <h2>Quality Matters
+    </h2>
+  </div>
+  <div class="srv-market-knowledge__list">
+    <ul>
+      <li>Daily cargo tracking</li>
+      <li>Shipment arrival date update</li>
+      <li>Post arrival follow-up in order to avoid over-stays and extra cost at the destination port</li>
+    </ul>
+  </div>
+
+
+  <img src="" alt="">
+{# 
+<div style="height: 1rem"></div> #}
+</div>
+
+{% include "_partials/_address.nunjucks" %}
+
+
+
+</div>
+{% endblock %}

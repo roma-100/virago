@@ -6,9 +6,9 @@
     </label>
       <ul class="menu" id="menu_point" onclick="CollapseMunu()">
         <li><a href=".">Home</a></li>
-        <li><a href="#point_our-team"  >About Us</a></li>
-        <li><a href="#point_our-service">Services</a></li>
-        <li><a href="#point_product-category">Products</a></li>
-        <li><a href="#point_contact_us">Contact Us</a></li>
+        <li><a href="./#point_our-team"  >About Us</a></li>
+        <li><a href="./#point_our-service">Services</a></li>
+        <li><a href="./#point_product-category">Products</a></li>
+        <li><a href="./#point_contact_us">Contact Us</a></li>
       </ul>
     </section>

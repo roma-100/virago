@@ -9,9 +9,10 @@
     <p>
      {{ text }}
     </p>
-    <div class="service-card__btn">
+{#     <div class="service-card__btn">
       READ MORE
-    </div>
+    </div> #}
+    <button onclick="location.href='{{link}}'" class="service-card__btn" role="button">READ MORE</button>
   </div>
 
 {% endmacro %}

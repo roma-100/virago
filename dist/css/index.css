@@ -7,6 +7,14 @@
 
 /* === ++ Palette === */
 
+.clr-3 {
+  color: #096AC0;
+}
+
+.clr-4 {
+  color: #074B87;
+}
+
 /* === .. Palette === */
 
 body {
@@ -350,6 +358,14 @@ html {
 
 /* === ++ Palette === */
 
+.clr-3 {
+  color: #096AC0;
+}
+
+.clr-4 {
+  color: #074B87;
+}
+
 /* === .. Palette === */
 
 body {
@@ -382,6 +398,72 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+/* .service-card__btn {
+    width: 250px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #006CC1;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+} */
+
+.service-card__btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: #096AC0;
+  border-radius: 8px;
+  border-style: none;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+          box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-family: "RM Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  -webkit-transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out, -webkit-box-shadow 0.13s ease-in-out;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out, -webkit-box-shadow 0.13s ease-in-out;
+  -o-transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out, opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out, -webkit-box-shadow 0.13s ease-in-out;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.service-card__btn:active {
+  background-color: #074B87;
+}
+
+.service-card__btn:hover {
+  background-color: #4790D2;
 }
 
 .product-category-card {
@@ -418,6 +500,59 @@ html {
   margin: 1rem;
 }
 
+.srv-trading-title {
+  text-align: center;
+  color: #096AC0;
+}
+
+.srv-market-knowledge {
+  background-color: #096AC0;
+  color: white;
+}
+
+.srv-market-knowledge--plus {
+  height: 1px;
+}
+
+.srv-market-knowledge__title {
+  background-color: #074B87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.srv-market-knowledge__list {
+  max-width: 400px;
+  padding: 0 1rem 0 1rem;
+}
+
+.srv-trading-title--border {
+  border: 1px solid #096AC0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.srv-trading-title--border .srv-trading-title--left {
+  color: #096AC0;
+}
+
+.srv-trading--border {
+  border: 1px solid #096AC0;
+}
+
 .content-wrap {
   max-width: 600px;
   margin: 0 auto;
@@ -426,7 +561,7 @@ html {
 .intro-hero {
   width: 100%;
   height: 300px;
-  background: url("../img/intro.jpg") 0 0/cover no-repeat;
+  /* background: url('../img/intro.jpg') 0 0/cover no-repeat; */
 }
 
 .intro-logo {
@@ -553,5 +688,3 @@ html {
 .contact-us a:active {
   color: blue;
 }
-
-.webp .intro-hero { background: url(../img/intro.webp) 0 0/cover no-repeat; }

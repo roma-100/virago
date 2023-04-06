@@ -755,7 +755,7 @@ html {
 .product-card {
   width: 100px;
   height: 150px;
-  color: #FFC200;
+  color: white;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -782,6 +782,6 @@ html {
 }
 
 .product-card > span {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   margin: 0.5rem;
 }

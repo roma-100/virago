@@ -1,0 +1,18 @@
+{% macro card1_item(image, title) %}
+  <div class="service-card">
+    <div class="service-card__image">
+      <img src={{ image }} alt={{title}}>
+    </div>
+    <div class="service-card__category">
+      {{ title }}
+    </div>    
+    <p>
+     {{ text }}
+    </p>
+{#     <div class="service-card__btn">
+      READ MORE
+    </div> #}
+    <button onclick="location.href='{{link}}'" class="service-card__btn" role="button">READ MORE</button>
+  </div>
+
+{% endmacro %}

@@ -1,0 +1,41 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_finance1.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div class="srv-trading-title">
+  <h2>Financial Solutions</h2>
+</div>
+
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__title">
+    <h2>Market Knowledge</h2>
+  </div>
+  <div class="srv-market-knowledge__list">
+
+    <p>Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.<br><br>
+Our financing solutions allow our clients more negotiating power and growth opportunities. Combining market expertise and the highest product quality standards, Duntower Corporation provides a spectrum of value for your business including credit expertise. Our international credit specialists play a critical role in our organization in providing risk management and transaction success.</p>
+  </div>
+
+
+<div style="height: 1rem"></div>
+</div>
+<!-- End Market Knowledge -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+
+
+
+</div>
+{% endblock %}

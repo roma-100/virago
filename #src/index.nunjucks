@@ -105,20 +105,20 @@
     './img/service_salary.png', 
     'Financial Solutions',
     'Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.',
-    '#') }}
+    'srv_finanase.html') }}
 
     {{ mcr_srv.service_item(
     './img/service_search.png', 
     'Quality Control & Guarantee',
     'Nothing more important than getting products from source to destination efficiently, on time and in good condition.',
-    '#') }}
+    'srv_quality.html') }}
 
 
     {{ mcr_srv.service_item(
     './img/service_cargo.png', 
     'Logistics & Documentation',
     'Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.',
-    '#') }}
+    'srv_logistics.html') }}
   
 <div class="section__bottom"></div>
 </div>

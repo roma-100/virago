@@ -1,0 +1,40 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_logistics.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div class="srv-trading-title">
+  <h2>Services Logistics & Documentation</h2>
+</div>
+
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__list">
+  <div style="height: 1rem"></div>
+Virago Commodities believes there’s nothing more important than getting products from source to destination efficiently, on time and in good condition. The complexities of international commerce make the logistics of international trade challenging. Experience, creativity and problem-solving skills are necessary to overcome the many obstacles in the food marketing industry.
+<br>
+<br>
+Our dedicated team of multilingual experts has a thorough understanding of each country’s documentation and requirements, which means our clients can depend on us to ensure all requirements are met, and products arrive at their destinations.</p>
+  </div>
+
+
+<div style="height: 1rem"></div>
+</div>
+<!-- End Market Knowledge -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+
+
+
+</div>
+{% endblock %}

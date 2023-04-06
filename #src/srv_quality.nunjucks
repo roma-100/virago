@@ -1,0 +1,43 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_quality.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div class="srv-trading-title">
+  <h2>Services Quality Control & Guarantee</h2>
+</div>
+
+<div class="srv-market-knowledge">
+  <!-- Start Market Knowledge -->
+  <div class="srv-market-knowledge__title">
+    <h2>Market Knowledge</h2>
+  </div>
+  <div class="srv-market-knowledge__list">
+  <div style="height: 1rem"></div>
+    We offer products from diverse origins which meet the quality demands of every market. Our highly qualified, hands-on team is present during the entire production process in order to guarantee product quality every step of the way.
+<br>
+<br>
+Our track-record shows commercial commitment and mutual respect between us and our clients and suppliers. Our commitment to quality and attention to the market allow us to forge long-lasting and meaningful business relationships.</p>
+  </div>
+
+
+<div style="height: 1rem"></div>
+</div>
+<!-- End Market Knowledge -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+
+
+
+</div>
+{% endblock %}

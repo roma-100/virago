@@ -127,3 +127,33 @@
         color: blue;
       }
 }
+
+.products-card__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product-card {
+    width: 100px;
+    height: 150px;
+    color: $clr-13;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    flex: 1;
+    &>img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 10%;
+    }
+    &>span {
+        font-size: .8rem;
+        margin: .5rem;
+    }
+}

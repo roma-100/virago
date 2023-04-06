@@ -12,12 +12,16 @@ $clr-1: #000000;
 $clr-2: #4790D2;
 $clr-3: #096AC0;
 $clr-4: #074B87;
-.clr-3 {
-    color: $clr-3
-}
-.clr-4 {
-    color: $clr-4
-}
+.clr-1 { color: $clr-1 }
+.clr-2 { color: $clr-2 }
+.clr-3 { color: $clr-3 }
+.clr-4 { color: $clr-4 }
+
+.bclr-1 { background-color: $clr-1 }
+.bclr-2 { background-color: $clr-2 }
+.bclr-3 { background-color: $clr-3 }
+.bclr-4 { cobackground-coloror: $clr-4 }
+
 $clr-10: #FFC91F;	// Main Secondary clr (1) */
 $clr-11: #000000;
 $clr-12: #FFD34A;

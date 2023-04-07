@@ -45,20 +45,30 @@
   </div>
 
     {{ mcr_category_card.category_item(
-    './img/category_1.png', 'GRAINS AND LEGUMES', "location.href='pr_type1.html'" ) }}
+    './img/category_1.png', 
+    'GRAINS AND LEGUMES'
+    ) }}
 
 
     {{ mcr_category_card.category_item(
-    './img/category_2.png', 'SEEDS AND HERBS', "location.href='pr_type2.html'" ) }}
+    './img/category_2.png', 
+    'SEEDS AND HERBS'
+    ) }}
 
     {{ mcr_category_card.category_item(
-    './img/category_3.png', 'NUTS AND PEANUTS', "location.href='pr_type3.html'" ) }}
+    './img/category_3.png', 
+    'NUTS AND PEANUTS'
+    ) }}
 
     {{ mcr_category_card.category_item(
-    './img/category_4.png', 'BEEF', "location.href='pr_type4.html'"  ) }}
+    './img/category_4.png', 
+    'BEEF'
+    ) }}
 
     {{ mcr_category_card.category_item(
-    './img/category_5.png', 'OILS, PELLETS AND FLOUR', "location.href='pr_type5.html'" ) }}
+    './img/category_5.png', 
+    'OILS, PELLETS AND FLOUR'
+    ) }}
 
 
 <div class="product-category__button">

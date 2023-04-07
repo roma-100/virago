@@ -523,6 +523,11 @@ html {
   margin-bottom: 2rem;
 }
 
+.product-category-card:hover {
+  cursor: pointer;
+  background-color: #FF824A;
+}
+
 .product-category-card .product-category-card__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,7 +677,7 @@ html {
 
 .intro-section .intro-title {
   font-family: "Inter-ExtraBold";
-  font-size: 3rem;
+  font-size: 2rem;
   /* color: white; */
   text-align: center;
 }

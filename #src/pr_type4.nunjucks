@@ -1,0 +1,128 @@
+<!-- index.nunjucks -->
+{% import 'macros/_category_card_macro.nunjucks' as mcr_category_card %}
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/intro.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+
+<!-- Start Category 41 -->
+<div class="srv-trading-title">
+  <h2>FANCY MEATS</h2>
+</div>
+
+<div class="srv-trading-title--border">
+    <div class="products-card__wrap">
+        {% for product in type41 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+</div>
+<!-- End Category 41 -->
+
+<!-- Start Category 42 -->
+<div class="srv-trading-title">
+  <h2>FOREQUARTER 1</h2>
+</div>
+
+<div class="srv-trading-title--border">
+    <div class="products-card__wrap">
+        {% for product in type42 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+</div>
+<!-- End Category 42 -->
+
+<!-- Start Category 43 -->
+<div class="srv-trading-title">
+  <h2>FOREQUARTER 2</h2>
+</div>
+
+<div class="srv-trading-title--border">
+    <div class="products-card__wrap">
+        {% for product in type43 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+</div>
+<!-- End Category 43 -->
+
+<!-- Start Category 44 -->
+<div class="srv-trading-title">
+  <h2>PORK PRODUCTS</h2>
+</div>
+
+<div class="srv-trading-title--border">
+    <div class="products-card__wrap">
+        {% for product in type44 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+</div>
+<!-- End Category 44 -->
+
+<div style="height: 1rem"></div>
+<div style="font-size: 2rem; text-align: center;" class="clr-3">
+  Our Products</div>
+    <p class="clr-3" style="text-align: center;">
+      We are specialized in the production, manufacturing, exportation and trading of various type of food.
+    </p>
+<!-- Section Category Start -->
+<div class="product-category" id="point_product-category">
+{#   <div class="intro-section">
+    <div class="intro-title bclr-3">
+      Our Products
+    </div>
+    <p>
+      We are specialized in the production, manufacturing, exportation and trading of various type of food.
+    </p>
+  </div>
+ #}
+ <div style="height: 1rem"></div>
+    {{ mcr_category_card.category_item(
+    './img/category_2.png', 'SEEDS AND HERBS', "location.href='./'" ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_3.png', 'NUTS AND PEANUTS', "location.href='./'" ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_5.png', 'OILS, PELLETS AND FLOUR', "location.href='./'" ) }}
+
+
+<div class="product-category__button">
+  ALL PRODUCTS LIST
+</div>
+
+<div class="product-category__button">
+  DOWNLOAD CATALOG
+</div>
+
+<div class="section__bottom"></div>
+</div>
+<!-- Section Category End -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+</div>
+{% endblock %}

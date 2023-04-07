@@ -1,0 +1,114 @@
+<!-- index.nunjucks -->
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/srv_finance1.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div style="height: 4rem"></div>
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    Type1</h1>
+    <div class="products-card__wrap">
+        {% for product in type1 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    Type2</h1>
+    <div class="products-card__wrap">
+        {% for product in type2 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    Type3</h1>
+    <div class="products-card__wrap">
+        {% for product in type3 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    type41_fancy_meats</h1>
+    <div class="products-card__wrap">
+        {% for product in type41 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    type42_forequarter_1</h1>
+    <div class="products-card__wrap">
+        {% for product in type42 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    type43_forequarter_2</h1>
+    <div class="products-card__wrap">
+        {% for product in type43 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    type44_pork_products</h1>
+    <div class="products-card__wrap">
+        {% for product in type44 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<h1 style="text-align: center; color: white;" class="bclr-3">
+    Type5</h1>
+    <div class="products-card__wrap">
+        {% for product in type5 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+
+<div style="height: 4rem"></div>
+</div>
+<!-- End Market Knowledge -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+
+
+
+</div>
+{% endblock %}

@@ -6,6 +6,10 @@
     border: 1px solid white;
     border-radius: 20px;
     margin-bottom: 2rem;
+    &:hover {
+        cursor: pointer;
+        background-color: $clr-22;
+    }
     .product-category-card__image {
         display: flex;
         justify-content: center;

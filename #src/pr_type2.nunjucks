@@ -1,0 +1,77 @@
+<!-- index.nunjucks -->
+{% import 'macros/_category_card_macro.nunjucks' as mcr_category_card %}
+
+{% extends "_layout.nunjucks" %}
+
+{% block content %}
+
+{% include "_partials/_menu.nunjucks" %}
+  
+<div class="intro">
+  <div class="intro-hero" style="background: url('./img/intro.jpg') 0 0/cover no-repeat;"></div>
+</div>
+
+<div class="content-wrap">
+<div class="srv-trading-title">
+  <h2>SEEDS AND HERBS</h2>
+</div>
+
+<div class="srv-trading-title--border">
+    <div class="products-card__wrap">
+        {% for product in type2 %}
+            <div class="product-card bclr-3">
+                <img src={{product.image}} alt="product.name">
+                <span>{{product.name}}</span>
+            </div>
+        {% endfor %}  
+    </div>
+</div>
+
+<div style="height: 1rem"></div>
+<div style="font-size: 2rem; text-align: center;" class="clr-3">
+  Our Products</div>
+    <p class="clr-3" style="text-align: center;">
+      We are specialized in the production, manufacturing, exportation and trading of various type of food.
+    </p>
+<!-- Section Category Start -->
+<div class="product-category" id="point_product-category">
+{#   <div class="intro-section">
+    <div class="intro-title bclr-3">
+      Our Products
+    </div>
+    <p>
+      We are specialized in the production, manufacturing, exportation and trading of various type of food.
+    </p>
+  </div>
+ #}
+ <div style="height: 1rem"></div>
+    {{ mcr_category_card.category_item(
+    './img/category_1.png', 'GRAINS AND LEGUMES', "location.href='pr_type1.html'" ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_3.png', 'NUTS AND PEANUTS', "location.href='pr_type3.html'" ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_4.png', 'BEEF', "location.href='pr_type4.html'"  ) }}
+
+    {{ mcr_category_card.category_item(
+    './img/category_5.png', 'OILS, PELLETS AND FLOUR', "location.href='pr_type5.html'" ) }}
+
+
+<div class="product-category__button">
+  ALL PRODUCTS LIST
+</div>
+
+<div class="product-category__button">
+  DOWNLOAD CATALOG
+</div>
+
+<div class="section__bottom"></div>
+</div>
+<!-- Section Category End -->
+
+
+{% include "_partials/_address.nunjucks" %}
+
+</div>
+{% endblock %}

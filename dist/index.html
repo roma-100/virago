@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virago</title>
     <link rel="stylesheet" href="css/index.css">
-  
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="lib/animate.min.css" />
 </head>
 <body>
     <!-- You write code for this content block in another file -->
@@ -48,7 +50,7 @@
 <div class="intro">
 
   <div class="intro-hero" style="background: url('./img/intro.jpg') 0 0/cover no-repeat;"></div>
-  <div class="intro-logo">
+  <div class="intro-logo animate__animated animate__bounce">
     <img src="./img/logo_h2.svg" alt="tttext logo_large">
   </div>
 
@@ -273,14 +275,21 @@
     <div class="intro-title">
       Contact Us
     </div>
-    <p>
-      Virago SA <br>
+
+    <div class="contact-us__wrap">
+      <span class="material-symbols-outlined">domain</span>
+      <div>      Virago SA <br>
       Avenue Uruguay 1664/4<br>
        Montevideo - Uruguay<br>
-       <a href="tel:598 4032113">Tel: 598 4032113</a><br>
-       <a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a>
+    </div>
+
+      <span class="contact-us__icon material-symbols-outlined">phone_in_talk</span>
+      <div><a href="tel:598 4032113">Tel: 598 4032113</a><br></div>
       
-    </p>
+      <span class="contact-us__icon material-symbols-outlined">mail</span>
+      <div><a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a></div>
+    </div>
+
   </div>
 
 <div class="section__bottom"></div>
@@ -291,7 +300,6 @@
 
 
 
-  
  </body>
 
 <script src="js/menu.js"></script>

@@ -12,9 +12,8 @@
 </div>
 
 <div class="content-wrap">
-
 <!-- Start Category 41 -->
-<div class="srv-trading-title">
+<div class="srv-trading-title animate__animated animate__fadeInRight">
   <h2>FANCY MEATS</h2>
 </div>
 
@@ -23,7 +22,7 @@
         {% for product in type41 %}
             <div class="product-card bclr-3">
                 <img src={{product.image}} alt="product.name">
-                <span>{{product.name}}</span>
+                <div class="product-card__name">{{product.name}}</div>
             </div>
         {% endfor %}  
     </div>
@@ -40,7 +39,7 @@
         {% for product in type42 %}
             <div class="product-card bclr-3">
                 <img src={{product.image}} alt="product.name">
-                <span>{{product.name}}</span>
+                <div class="product-card__name">{{product.name}}</div>
             </div>
         {% endfor %}  
     </div>
@@ -57,7 +56,7 @@
         {% for product in type43 %}
             <div class="product-card bclr-3">
                 <img src={{product.image}} alt="product.name">
-                <span>{{product.name}}</span>
+                <div class="product-card__name">{{product.name}}</div>
             </div>
         {% endfor %}  
     </div>
@@ -74,7 +73,7 @@
         {% for product in type44 %}
             <div class="product-card bclr-3">
                 <img src={{product.image}} alt="product.name">
-                <span>{{product.name}}</span>
+                <div class="product-card__name">{{product.name}}</div>
             </div>
         {% endfor %}  
     </div>

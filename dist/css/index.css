@@ -752,9 +752,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product-card {
@@ -786,7 +786,15 @@ html {
   border-radius: 10%;
 }
 
-.product-card > span {
+.product-card .product-card__name {
+  height: 35px;
   font-size: 0.6rem;
   margin: 0.5rem;
+}
+
+.contact-us__wrap {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 50px 200px;
+  grid-row-gap: 8px;
 }

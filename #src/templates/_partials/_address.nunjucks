@@ -4,12 +4,26 @@
     <div class="intro-title">
       Contact Us
     </div>
-    <p>
+{#     <p>
       Virago SA <br>
       Avenue Uruguay 1664/4<br>
        Montevideo - Uruguay<br>
-       <a href="tel:598 4032113">Tel: 598 4032113</a><br>
+       
        <a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a>
       
-    </p>
+    </p> #}
+    <div class="contact-us__wrap">
+      <span class="material-symbols-outlined">domain</span>
+      <div>      Virago SA <br>
+      Avenue Uruguay 1664/4<br>
+       Montevideo - Uruguay<br>
+    </div>
+
+      <span class="contact-us__icon material-symbols-outlined">phone_in_talk</span>
+      <div><a href="tel:598 4032113">Tel: 598 4032113</a><br></div>
+      
+      <span class="contact-us__icon material-symbols-outlined">mail</span>
+      <div><a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a></div>
+    </div>
+
   </div>

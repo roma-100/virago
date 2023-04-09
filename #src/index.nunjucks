@@ -11,7 +11,7 @@
 <div class="intro">
 
   <div class="intro-hero" style="background: url('./img/intro.jpg') 0 0/cover no-repeat;"></div>
-  <div class="intro-logo">
+  <div class="intro-logo animate__animated animate__bounce">
     <img src="./img/logo_h2.svg" alt="tttext logo_large">
   </div>
 

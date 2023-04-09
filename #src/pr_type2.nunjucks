@@ -12,7 +12,7 @@
 </div>
 
 <div class="content-wrap">
-<div class="srv-trading-title">
+<div class="srv-trading-title animate__animated animate__fadeInRight">
   <h2>SEEDS AND HERBS</h2>
 </div>
 
@@ -21,7 +21,7 @@
         {% for product in type2 %}
             <div class="product-card bclr-3">
                 <img src={{product.image}} alt="product.name">
-                <span>{{product.name}}</span>
+                <div class="product-card__name">{{product.name}}</div>
             </div>
         {% endfor %}  
     </div>

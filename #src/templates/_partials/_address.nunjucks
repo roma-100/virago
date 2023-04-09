@@ -20,10 +20,13 @@
     </div>
 
       <span class="contact-us__icon material-symbols-outlined">phone_in_talk</span>
-      <div><a href="tel:598 4032113">Tel: 598 4032113</a><br></div>
+      <div><a href="tel:+598 96 780 913">Tel: +598 96 780 913</a><br></div>
       
       <span class="contact-us__icon material-symbols-outlined">mail</span>
-      <div><a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a></div>
+      <div><a href = "mailto: administracion.1@virago.uy">administracion.1@virago.uy</a>
+      <br>
+      <a href = "mailto: administracion.2@virago.uy">administracion.2@virago.uy</a>
+      </div>
     </div>
 
   </div>

@@ -57,11 +57,6 @@
     {{ mcr_category_card.category_item(
     './img/category_5.png', 'OILS, PELLETS AND FLOUR', "location.href='pr_type5.html'" ) }}
 
-
-<div class="product-category__button">
-  ALL PRODUCTS LIST
-</div>
-
 <div class="product-category__button">
   DOWNLOAD CATALOG
 </div>

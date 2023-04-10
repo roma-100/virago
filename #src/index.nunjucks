@@ -91,7 +91,7 @@
     './img/service_salary.png', 
     'Financial Solutions',
     'Virago Commodities provides the financial solutions, support, expertise, and the access necessary to create a fertile ground for success.',
-    'srv_finanase.html') }}
+    'srv_finanance.html') }}
 
     {{ mcr_srv.service_item(
     './img/service_search.png', 
